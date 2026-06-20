@@ -1,0 +1,45 @@
+{
+  "baseline_model": "Groq llama-3.3-70b-versatile",
+  "baseline_accuracy": 0.4667,
+  "test_set_size": 30,
+  "parseable_responses": 30,
+  "unparseable_responses": 0,
+  "label_map": {
+    "analysis": 0,
+    "hot_take": 1,
+    "reaction": 2
+  },
+  "per_class_metrics": {
+    "analysis": {
+      "precision": 1.0,
+      "recall": 0.3,
+      "f1-score": 0.46153846153846156,
+      "support": 10.0
+    },
+    "hot_take": {
+      "precision": 0.6666666666666666,
+      "recall": 0.2,
+      "f1-score": 0.3076923076923077,
+      "support": 10.0
+    },
+    "reaction": {
+      "precision": 0.375,
+      "recall": 0.9,
+      "f1-score": 0.5294117647058824,
+      "support": 10.0
+    },
+    "accuracy": 0.4666666666666667,
+    "macro avg": {
+      "precision": 0.6805555555555555,
+      "recall": 0.4666666666666666,
+      "f1-score": 0.43288084464555054,
+      "support": 30.0
+    },
+    "weighted avg": {
+      "precision": 0.6805555555555555,
+      "recall": 0.4666666666666667,
+      "f1-score": 0.43288084464555054,
+      "support": 30.0
+    }
+  }
+}
