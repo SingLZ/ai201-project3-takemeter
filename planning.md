@@ -83,6 +83,50 @@ Example:
 
 This could be either `reaction` or `hot_take`. I will label it `reaction` if the main purpose is emotional frustration. I will label it `hot_take` if the comment makes a clear basketball claim, such as criticizing coaching, roster construction, or player quality.
 
+## Difficult Annotation Cases From Milestone 3
+
+### Case 1
+
+Text:
+
+> Wembanyama in Spurs wins this series: 25 FGA in Game 1 and 22 FGA in Game 4. Wembanyama in Spurs losses this series: 16 FGA in Game 2, 15 FGA in Game 3, and 15 FGA in Game 5. SAN ANTONIO, WEMBY, YOUR GAMEPLAN COULD NOT BE ANY MORE SIMPLER FOR GAME 6; DEMAND THE BALL
+
+Possible labels: `analysis` or `hot_take`
+
+Final label: `analysis`
+
+Reason:
+
+This comment has emotional and exaggerated wording, especially in the final sentence, which makes it partly look like a `hot_take`. However, it gives a specific field-goal-attempt split between Spurs wins and losses and uses that evidence to support a clear game-plan argument. Because the evidence is connected to a basketball claim, I labeled it `analysis`.
+
+### Case 2
+
+Text:
+
+> Okc was a better team and both stars were so off timing. Also Tony Brothers may just be a supervillain.
+
+Possible labels: `analysis` or `reaction`
+
+Final label: `analysis`
+
+Reason:
+
+This comment includes a joke about Tony Brothers, which makes it look partly like a `reaction`. However, the main part of the comment explains the result by saying OKC was the better team and that both stars were off timing. Since the comment gives a basketball explanation instead of only expressing emotion, I labeled it `analysis`.
+
+### Case 3
+
+Text:
+
+> Mitch Johnson has to play the media game. He has to call out what they were doing to Wemby. He has enough status as the next face of the league that it will become a story. If he doesn’t they’ll do this for the rest of the series.
+
+Possible labels: `hot_take` or `analysis`
+
+Final label: `hot_take`
+
+Reason:
+
+This comment makes a strategic claim about how Mitch Johnson should use the media to influence the series. It has some reasoning, but it does not provide specific evidence, examples, or basketball context showing that this strategy would actually work. Because the comment mostly asserts a confident opinion without enough support, I labeled it `hot_take`.
+
 ## 4. Data Collection Plan
 
 I will collect approximately **200 public Reddit comments** from r/nba. I will focus on discussion-heavy threads where comments are more likely to contain meaningful text.
