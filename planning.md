@@ -270,3 +270,16 @@ I will ask the AI to identify common failure types, such as:
 * Failing on comments with basketball slang
 
 I will verify these patterns myself by reading the actual wrong predictions. The AI tool will help organize possible explanations, but I will not accept its analysis without checking the examples manually.
+
+## Stretch Feature Plan: Error Pattern Analysis
+
+For my stretch feature, I will perform a systematic error pattern analysis on the fine-tuned model's wrong predictions.
+
+I will not only list individual errors. I will look for repeated patterns in the confusion matrix and wrong predictions, including:
+
+- which true labels are most often misclassified
+- which predicted labels they are confused with
+- whether mistakes are caused by short comments, sarcasm, emotional wording, weak evidence, or ambiguous basketball claims
+- whether the issue appears to be label design, annotation consistency, or model limitations
+
+I will use the wrong predictions from the test set and compare them against the confusion matrix. I will also use an AI tool to suggest possible patterns, then manually verify whether those patterns are supported by the actual examples.

@@ -265,3 +265,19 @@ First, I used AI to help draft and stress-test the label taxonomy. I asked for e
 
 I also used AI during evaluation to identify patterns in wrong predictions. I provided the model with misclassified examples, true labels, predicted labels, and confidence scores. The AI suggested that the main error pattern was confusion around `hot_take`. I manually verified that pattern using the confusion matrix and the wrong examples before including it in this report.
 
+## Stretch Feature: Error Pattern Analysis
+
+For the stretch feature, I performed a systematic error pattern analysis instead of only listing individual wrong predictions.
+
+The main pattern was confusion around the `hot_take` label. Out of 12 total fine-tuned errors, 9 involved true `hot_take` examples. The model classified 4 hot takes as `analysis` and 5 hot takes as `reaction`.
+
+This shows that `hot_take` was not learned as a stable middle category. When a hot take contained basketball-specific details, the model often treated it as `analysis`. When a hot take used emotional, sarcastic, or exaggerated language, the model often treated it as `reaction`.
+
+This pattern suggests that the model learned surface cues better than the actual label rule. It learned that reasoning-like language often means `analysis` and emotional language often means `reaction`, but it struggled to identify unsupported claims that sit between those two labels.
+
+To improve this, I would collect more borderline `hot_take` examples and add clearer annotation rules for three cases:
+
+1. comments with numbers but no real explanation
+2. sarcastic comments that imply a basketball claim
+3. short speculative comments about players, trades, or coaching
+
