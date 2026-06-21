@@ -281,3 +281,8 @@ To improve this, I would collect more borderline `hot_take` examples and add cle
 2. sarcastic comments that imply a basketball claim
 3. short speculative comments about players, trades, or coaching
 
+## Demo Video
+
+[![Project Demo Video](https://img.youtube.com/vi/53Fn9zafgVY/hqdefault.jpg)](https://www.youtube.com/watch?v=53Fn9zafgVY)
+
+
